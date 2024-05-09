@@ -19,10 +19,16 @@ This repository serves as an example of how to integrate Shadcn-UI into a Redwoo
 3. Initialize Shadcn-UI in your Redwood project's web workspace:
 
    ```bash
-   npx shadcn-ui@latest init -c web
+   npx shadcn-ui@0.7.0 init -c web
    ```
 
-4. During the init process, follow these configuration steps:
+4. Install the shacdn dependencies in your Redwood project's web workspace:
+
+   ```bash
+   yarn workspace web add tailwindcss-animate class-variance-authority clsx tailwind-merge
+   ```
+
+5. During the init process, follow these configuration steps:
 
    - Choose TypeScript if you created your Redwood project with TypeScript.
    - Select a style theme from the available options. You can compare the default and New York styles [here](https://ui.shadcn.com/themes).
@@ -55,7 +61,7 @@ This repository serves as an example of how to integrate Shadcn-UI into a Redwoo
     }
     ```
 
-5. After completing the initialization, you can start adding components using the following command:
+6. After completing the initialization, you can start adding components using the following command:
 
    ```bash
    npx shadcn-ui@latest add -c web
